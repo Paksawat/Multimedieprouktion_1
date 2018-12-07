@@ -1,0 +1,18 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#grid{
+	min-height: 200vh;
+	background: #4592A2;
+	margin:21.324% 10.663% 0px 5.331% ;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows:auto;
+} 
+div{
+	height:50px;
+	background: #000;
+
+}

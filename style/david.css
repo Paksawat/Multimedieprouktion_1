@@ -1,0 +1,228 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#grid{
+	margin:21.324% 10.663% 0px 5.331% ;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows:min-content;
+} 
+
+nav{
+	position: fixed;
+	top:0;
+	left:0;
+	background-color: 	#D30024;
+	height:60px;
+	width:100%;
+}
+aside{
+	position: fixed;
+	right:0;
+	top:0;
+	background-color:	#D30024;
+	height:100vh;
+	width:20px;
+}
+/*///////////////////////////////////////////////
+Ønskeliste
+///////////////////////////////////////////////*/
+.wish_header{
+	grid-column:4/10;
+	height:2rem;
+	background: #4BA2B8;
+}
+
+.wish_child{
+	grid-column:1/13;
+	height:2.5rem;
+	background: #E853BC;
+}
+
+.wish_icons{
+	grid-column:span 6;
+	height:4rem;
+	background:#F64949;
+
+}
+.wish_icons:nth-child(odd){
+	background-color:#4FA187;
+}
+.wish_product{
+	grid-column:1/13;
+	height:8rem;
+	background: #E853BC;
+}
+.wish_product:nth-child(even){
+	background:#5ABD55;
+}
+
+
+/*///////////////////////////////////////////////
+Indstillinger
+///////////////////////////////////////////////*/
+.options_header{
+	grid-column:1/13;
+	height:3.5rem;
+	background: #4BA2B8;
+}
+.wishlists{
+	grid-column:1/13;
+	height:2.5rem;
+	background:#868686;
+	margin-top: 20px;
+	margin-left: calc(-50vw + 50%);
+  	margin-right: calc(-52vw + 50%);
+}
+.wish_option{
+	grid-column:1/13;
+	min-height:2.5rem;
+	background:#868686;
+}
+.wish_opret{
+	grid-column:1/6;
+	min-height:2.5rem;
+	background:#2D8B85;
+}
+.wish_login{
+	margin-top: 75px;
+	grid-column:2/12;
+	min-height:3rem;
+	background:#BF47CD;
+}
+.wishlist_opret{
+	grid-column:1/13;
+	height:2.5rem;
+	background:#868686;
+	height:10rem;
+}
+
+/*///////////////////////////////////////////////
+Produktinformation
+///////////////////////////////////////////////*/
+
+.prod_info{
+	grid-column:1/13;
+	background: #fff;
+	padding:0 10px;
+
+}
+.prod_info h1{
+	margin-bottom:20px;
+	color:#565656;
+	text-align: center;
+}
+.prod_info a{
+	margin-bottom:20px;
+	text-decoration: none;
+	color:black;
+}
+.prod_info img{
+	display: block;
+	width:15rem;
+	height:12rem;
+	margin:10px auto 0px auto;
+	margin-bottom: 20px;
+}
+.prod_info .back{
+	margin-top: 10px;
+	margin-bottom:0;
+}
+.back img{
+	display: inline-block;
+	margin:0;
+	height:20px;
+	width:20px;
+}
+
+.prod_price{
+	grid-column: span 6;
+	text-align: center;
+	line-height: 34px;
+	color:#F64949;
+	font-weight: 800;
+	background: #fff;
+	font-size: 1.5rem;
+
+}
+.tilfoj{
+	grid-column:span 6;
+	margin-bottom: 0;
+	width:100%;
+	height:100%;
+	text-align: center;
+	line-height: 34px;
+	text-decoration: none;
+	color:#fff;
+	font-weight: 800;
+	font-size: 1.5rem;
+	background: #5ABD55;
+}
+.mere{
+	color:#565656;
+	border-bottom:1px solid #565656;
+	text-align: center;
+	margin: 20px 0;
+}
+/*///////////////////////////////////////////////
+Kalender
+///////////////////////////////////////////////*/
+
+.kalender-box{
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 5%;
+    grid-column:span 4;
+	height:4rem;
+    background:#F64949;
+    text-align: center;
+    line-height: 4rem;
+    border-radius: 5px;
+}
+.kalender-box h4{
+	color:	#FFD700;
+	font-size: 1.5rem;
+	font-weight: bold;
+	opacity:.6;
+}
+.kalender-open{
+	background-size: cover;
+	background-image: url(../images/story_1.jpg);
+}
+.kalender-open h4{
+	opacity: 1;	
+	color:white;
+}
+/*///////////////////////////////////////////////
+Dagens låge
+///////////////////////////////////////////////*/
+.back{
+	grid-column: 1/13;
+	display: inline-block;
+	text-decoration: none;
+	color:black;
+}
+.dato{
+	grid-column: 1/13;
+	text-align: center;
+	background-color: none;
+}
+iframe{
+	grid-column: 1/13;
+	height:12rem;
+	margin:5% 0;
+	border:none;
+	width:100%;
+}
+.tekst{
+	 grid-column:1/13;
+	height:15rem;
+	overflow: scroll;
+}
+.tekst h3{
+	text-align: center;
+	margin:10px 0 20px 0;
+}

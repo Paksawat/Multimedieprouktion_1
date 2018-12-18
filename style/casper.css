@@ -1,0 +1,251 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#grid{
+	margin:21.324% 10.663% 0px 5.331% ;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows:min-content;
+} 
+.opretprofil{
+    background-color: beige;
+    grid-column: 4/10;
+    height: 2rem;
+    margin-top: 40px;
+}
+
+.voksen{
+    background-color: red;
+    grid-column: 2/7;
+    height:2rem;
+    margin-top: 100px;
+    
+    
+}
+.barn{
+    background-color: lightcoral;
+    grid-column: 7/12;
+    height: 2rem;
+    margin-top: 100px;
+}
+
+.continue{
+    background-color: forestgreen;
+    grid-column: 2/12;
+    margin-top: 80%;
+    height: 2rem;
+}
+
+.kode{
+    background-color: aqua;
+    grid-column: 2/12;
+    height: 2rem;
+
+}
+
+.logind{
+    background-color: black;
+    grid-column: 2/12;
+    height: 2rem;
+}
+
+.info{
+    background-color: blueviolet;
+    grid-column: 4/10;
+    height: 2rem;
+    margin-top: 200px;
+}
+
+.opret{
+    background-color: forestgreen;
+    grid-column: 2/12;
+    margin-top:20px;
+    height: 2rem;
+}
+
+.tilbage{
+    background-color: lawngreen;
+    grid-column: 2/3;
+    height: 2rem;
+    margin-top: 40px;
+}
+
+/*///////////////////////////////
+Menubar
+//////////////////////////////*/
+
+nav{
+	position: fixed;
+	top:0;
+	left:0;
+	background-color: 	#D30024;
+	height:62px;
+    width:100%;
+}
+nav ul li img{
+width: 30px;
+
+}
+nav ul li:first-child{
+    margin:0;
+}
+nav ul li:first-child a img{
+    margin-top: 2px;
+}
+nav ul li{
+display: inline-block;
+height: 100%;
+text-align: center;
+margin: 8px 5px 0px 5px;
+
+}
+
+.menu{
+    text-align: right;
+    margin-left: 20px;
+    height: 100%;
+    margin-right: 20px;
+
+}
+ 
+.menu li:first-child{
+    float:left;
+     
+ }
+
+.menu li:first-child img{
+     height: 90%;
+     width: 58px;
+ }
+
+ .menuskrift{
+     color: white;
+     font-size: 0.9rem;
+     font-weight: bold;
+ }
+
+ a{
+     text-decoration: none;
+ }
+ 
+
+ /*///////////////////////////////////////////////
+Ønskeliste
+///////////////////////////////////////////////*/
+.wish_header{
+	grid-column:4/10;
+	height:2rem;
+	background: #4BA2B8;
+}
+
+.wish_child{
+	grid-column:1/13;
+	height:2.5rem;
+	background: #E853BC;
+}
+
+.wish_icons{
+	grid-column:span 6;
+	height:4rem;
+	background:#F64949;
+
+}
+.wish_icons:nth-child(odd){
+	background-color:#4FA187;
+}
+.wish_product{
+	grid-column:1/13;
+	height:8rem;
+	background: #E853BC;
+}
+.wish_product:nth-child(even){
+	background:#5ABD55;
+}
+
+
+/*///////////////////////////////////////////////
+Indstillinger
+///////////////////////////////////////////////*/
+.options_header{
+	grid-column:1/13;
+	height:3.5rem;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: solid black 1px;
+}
+.wishlists{
+	grid-column:1/13;
+	height:2.5rem;
+    margin-top: 20px;
+    background-color: #D30024;
+    color: white;
+    line-height: 2.5rem;
+	
+}
+.wish_option2{
+	grid-column:1/13;
+    height:2rem;
+    border-bottom: solid black 1px; 
+    margin: 20px 0;
+}
+.wish_opret{
+	grid-column:1/6;
+	min-height:2.5rem;
+}
+.wish_login{
+	margin-top: 10px;
+	grid-column:2/12;
+	min-height:3rem;
+}
+
+.change{
+    grid-column: 1/13;
+}
+.change .label{
+    display: inline-block;
+    width:50%;
+    height:1.5rem;
+}
+form input{
+    width:40%;
+}
+.liste{
+    width:100%;
+}
+.liste li{
+    display: inline-block;
+}
+.liste .navn{
+    width:20%;
+}
+.liste .gave img, .liste .kr img{
+    width:18px;
+    margin-right: 5px;
+}
+.liste .gave{
+    width:20%;
+}
+.liste .arrow{
+    float:right;
+}
+.liste .arrow img{
+    width:18px;
+    transform: rotate(-90deg);
+}
+.opret_liste{
+    grid-column: 1/13;
+    color:#000000;
+   text-decoration: underline;
+   margin-bottom: 4rem;
+}
+.barn_logind{
+    grid-column: 3/11;
+    text-align: center;
+    height:2.5rem;
+    line-height: 2.5rem;
+    background-color: #D30024;
+    border-radius: 5px;
+    color:#eee;
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="da">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style/style.css">
+	 <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto+Slab" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>BR Ønskebogen</title>
+</head>
+
+<body>
+	 <nav>
+                <ul class="menu">
+                    <li><a href="forside.html">
+                    <img class="logo" src="images/logo.png" alt="BR logo">
+                    
+                    </a></li>
+                    <li><a href="kalender.html">
+                            <img src="images/icons/calendar.svg" alt="Kalender">
+                    <p class="menuskrift"> Kalender</p>
+                        </a></li>
+                    <li><a href="oenskeliste.html">
+                            <img src="images/icons/wishlist.svg" alt="Ønskeliste">   
+                    <p class="menuskrift">Ønskeliste</p>
+                        </a></li>
+                    <li><a href="indstillinger.html">
+                            <img  src="images/icons/profil.svg" alt="Profil">
+                    <p class="menuskrift active">Profil</p>
+                        </a></li>
+                </ul>
+            </nav> 
+        <aside></aside>
+	
+	<main id="grid">
+		<h1 class="options_header"> Hansen</h1>
+		<h3 class="wishlists">Ønskelister</h3>
+
+		<section class="wish_option2">
+			<ul class="liste"> 
+				<li class="navn"><h4>Brian</h4></li>	
+				<li class="gave"><img src="images/icons/present.svg" alt="Gaver" >3/6</li>
+				
+				<li class="kr"><img src="images/icons/pricetag.svg" alt="Pris">487,00 / 1.600 kr.</li>
+				<li class="arrow"><img class="closed" src="images/icons/left-arrow.svg" alt="Fold ud"></li>
+			</ul>
+		</section>
+		
+		<form class="change" action="#">
+		    <label class="label">Max Pris pr. gave</label> <input type="range" max="1600" min="0" value="600" class="slider"> <br>
+		 	<label class="label">Max antal gaver</label> <input type="range" max="12" min="0" value="6" class="slider"><br>
+		 	<label class="label">Max budget</label> <input type="range" max="5000" min="0" value="1600" class="slider"> <br>
+	    </form>
+		<section class="wish_option2">
+			<ul class="liste"> 
+				<li class="navn"><h4>Oluf</h4></li>	
+				<li class="gave"><img src="images/icons/present.svg" alt="Gaver" >4/6</li>
+				
+				<li class="kr"><img src="images/icons/pricetag.svg" alt="Pris">736,00 / 1.600 kr.</li>
+				<li class="arrow"><img class="closed" src="images/icons/left-arrow.svg" alt="Fold ud"></li>
+			</ul>
+		</section>
+		
+		<section class="wish_option2">
+			<ul class="liste"> 
+				<li class="navn"><h4>Gertrud</h4></li>	
+				<li class="gave"><img src="images/icons/present.svg" alt="Gaver" >3/6</li>
+				
+				<li class="kr"><img src="images/icons/pricetag.svg" alt="Pris">487,00 / 1.600 kr.</li>
+				<li class="arrow"><img class="closed" src="images/icons/left-arrow.svg" alt="Fold ud"></li>
+			</ul>
+		</section>
+		<a class="opret_liste" href="">Opret liste +</a>
+
+		<a class="barn_logind" href="">Log ind som barn</a>
+	</main>
+
+
+</body>
+</html>

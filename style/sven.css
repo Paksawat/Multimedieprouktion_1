@@ -1,0 +1,507 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-image: url(../images/background.png);
+	margin-bottom:20px;
+}
+#grid{
+	margin:21.324% 10.663% 0px 5.331% ;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows:min-content;
+} 
+
+nav{
+	position: fixed;
+	top:0;
+	left:0;
+	background-color: 	#D30024;
+	height:60px;
+	width:100%;
+}
+aside{
+	position: fixed;
+	right:0;
+	top:0;
+	background-color:	#D30024;
+	height:100vh;
+	width:20px;
+}
+
+/*///////////////////////////////////////////////
+Kalender
+///////////////////////////////////////////////*/
+.kalender-box{
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 5%
+}
+.kalender-box1{
+    grid-column:1/4;
+	height:4rem;
+    background: #4BA2B8;
+
+}
+.kalender-box2{
+    grid-column:4/7;
+	height:4rem;
+    background: #E853BC;
+
+}
+.kalender-box3{
+    grid-column:7/10;
+	height:4rem;
+    background: #284950;
+
+}
+.kalender-box4{
+    grid-column:10/13;
+	height:4rem;
+	background: rgb(205, 232, 83);
+
+}
+.kalender-box5{
+    grid-column:1/4;
+	height:4rem;
+	background: rgb(87, 207, 93);
+
+}
+.kalender-box6{
+    grid-column:4/7;
+	height:4rem;
+	background: rgb(219, 215, 218);
+
+}
+.kalender-box7{
+    grid-column:7/10;
+	height:4rem;
+	background: rgb(83, 177, 232);
+
+}
+.kalender-box8{
+    grid-column:10/13;
+	height:4rem;
+	background: rgb(255, 0, 179);
+
+}
+.kalender-box9{
+    grid-column:1/4;
+	height:4rem;
+	background: #E853BC;
+
+}
+.kalender-box10{
+    grid-column:4/7;
+	height:4rem;
+	background: #E853BC;
+
+}
+.kalender-box11{
+    grid-column:7/10;
+	height:4rem;
+	background: #E853BC;
+
+}
+.kalender-box12{
+    grid-column:10/13;
+	height:4rem;
+	background: #E853BC;
+
+}
+.kalender-box13{
+    grid-column:1/4;
+	height:4rem;
+	background: #E853BC;
+
+}
+.kalender-box14{
+    grid-column:4/7;
+	height:4rem;
+	background: #E853BC;
+
+}
+.kalender-box15{
+    grid-column:7/10;
+	height:4rem;
+	background: #E853BC;
+
+}
+.kalender-box16{
+    grid-column:10/13;
+	height:4rem;
+	background: #E853BC;
+
+}
+.kalender-box17{
+    grid-column:1/4;
+	height:4rem;
+	background: #E853BC;
+
+}
+.kalender-box18{
+    grid-column:4/7;
+	height:4rem;
+	background: #E853BC;
+
+}
+.kalender-box19{
+    grid-column:7/10;
+	height:4rem;
+	background: #E853BC;
+
+}
+.kalender-box20{
+    grid-column:10/13;
+	height:4rem;
+	background: #E853BC;
+
+}
+.kalender-box21{
+    grid-column:1/4;
+	height:4rem;
+	background: #E853BC;
+
+}
+.kalender-box22{
+    grid-column:4/7;
+	height:4rem;
+	background: #E853BC;
+
+}
+.kalender-box23{
+    grid-column:7/10;
+	height:4rem;
+	background: #E853BC;
+
+}
+.kalender-box24{
+    grid-column:10/13;
+	height:4rem;
+	background: #E853BC;
+
+}
+
+/*///////////////////////////////////////////////
+Dagens låg
+///////////////////////////////////////////////*/
+.tilbage{
+    grid-column:1/4;
+	height:1rem;
+
+}
+.dato{
+	grid-column:3/11;
+	height:2rem;
+
+	margin-top: 2%
+}
+.video{
+    grid-column:1/13;
+	height:15rem;
+	
+	margin-top: 2%
+}
+.tekst{
+    grid-column:2/12;
+	height:15rem;
+	
+	margin-top: 2%
+
+}
+
+
+/*///////////////////////////////////////////////
+Forside produkt
+///////////////////////////////////////////////*/
+.front_calendar{
+    grid-column:1/13;
+	height:6rem;
+	background-color:#D30024;
+	background-image: 	url("../images/forside/julepynt.png");
+	background-size: 60%;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+.front_calendar p{
+	color:white;
+	font-size: 2.5rem;
+	line-height: 7rem;
+	margin-left: 15%;
+}
+.switch{
+    grid-column:2/7;
+	height:2rem;
+	background: #F34E4E;
+	margin: 15% 0;
+	text-align: center;
+}
+.switch1{
+	grid-column: 7/12;
+	height: 2rem;
+	background: #F34E4E;
+	margin: 15% 0;
+	text-align: center;
+}
+.switch_active{
+	background-color:#D30024;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9); /* https://mayvendev.com/blog/inner-shadows-in-css-images-text-and-beyond */
+}
+.switch a , .switch1 a{
+	text-decoration: none;
+	width:100%;
+	height:100%;
+	line-height: 2rem;
+	color:white;
+}
+.produkt_box{
+    grid-column:span 6;
+	background:white;
+	margin-top: 5%;
+	border-radius: 5px;
+}
+.produkt_box:nth-child(even){
+	margin-right:2.5%;
+}
+.produkt_box:nth-child(odd){
+	margin-left:2.5%;
+}
+.produkt_box img{
+	display: block;
+	width:8rem;
+	height:6rem;
+	margin:10px auto 0px auto;
+
+}
+.produkt_box p{
+	text-align: center;
+	margin-bottom:10px;
+}
+.produkt_box p:nth-child(2){
+	width:98%;
+	height:40px;
+	color:#565656;
+	margin:5px 2% 5px 2%;
+}
+.produkt_box p:nth-child(3){
+	color:#D30024;
+	font-weight: bold;
+}
+.produkt_box p:nth-child(4){
+	border:2px solid #31930A;
+	padding:1px 2px;
+	border-radius: 2px;
+	margin-bottom: 0;
+	width:80%;
+	margin:0 auto 10px auto;
+}
+/*///////////////////////////////////////////////
+Forside kategori
+///////////////////////////////////////////////*/
+.switch2{
+    grid-column:7/12;
+	height:2rem;
+	background: #F34E4E;
+	margin: 15% 0;
+	text-align: center;
+}
+.switch3{
+	grid-column: 2/7;
+	height: 2rem;
+	background: #F34E4E;
+	margin: 15% 0;
+	text-align: center;
+}
+.switch_active1{
+	background-color:#D30024;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9); /* https://mayvendev.com/blog/inner-shadows-in-css-images-text-and-beyond */
+}
+.switch2 a , .switch3 a{
+	text-decoration: none;
+	width:100%;
+	height:100%;
+	line-height: 2rem;
+	color:white;
+}
+.kategorileft{
+	margin-right: 2%;
+	background-color:#D30024;
+	background-image: 	url("../images/forside/julepynt.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+}
+.kategorileft p{
+	color:white;
+	font-size: auto;
+	line-height: 4rem;
+	text-align: center;
+}
+.kategoriright{
+	margin-left: 2%;
+	background-color:#D30024;
+	background-image: 	url("../images/forside/julepynt.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+}
+.kategoriright p{
+	color:white;
+	font-size: auto;
+	line-height: 4rem;
+	text-align: center;
+}
+.kategori1{
+    grid-column:1/7;
+	margin-top: 5%
+}
+.kategori2{
+    grid-column:7/13;
+	height:4rem;
+	margin-top: 5%
+}
+.kategori3{
+    grid-column:1/7;
+	height:4rem;
+	margin-top: 5%
+}
+.kategori4{
+    grid-column:7/13;
+	height:4rem;
+	margin-top: 5%
+}
+.kategori5{
+    grid-column:1/7;
+	height:4rem;
+	margin-top: 5%
+}
+.kategori6{
+    grid-column:7/13;
+	height:4rem;
+	margin-top: 5%
+}
+.kategori7{
+    grid-column:1/7;
+	height:4rem;
+	margin-top: 5%
+}
+.kategori8{
+    grid-column:7/13;
+	height:4rem;
+	margin-top: 5%
+}
+.kategori9{
+    grid-column:1/7;
+	height:4rem;
+	margin-top: 5%
+}
+.kategori10{
+    grid-column:7/13;
+	height:4rem;
+	margin-top: 5%
+}
+.kategori11{
+    grid-column:1/7;
+	height:4rem;
+	margin-top: 5%
+}
+.kategori12{
+    grid-column:7/13;
+	height:4rem;
+	margin-top: 5%
+}
+
+/*///////////////////////////////////////////////
+Ønskeliste
+///////////////////////////////////////////////*/
+.wish_header{
+	grid-column:4/10;
+	height:2rem;
+	color:white;
+	font-size: auto;
+	text-align: center;
+}
+.wish_child{
+	grid-column:1/13;
+	height:2rem;
+	list-style-type: none;
+}
+.wish_child li{
+	float: left;
+	border-style: solid;
+	border-color: grey;
+	border-width: 0.2px;
+	color: white;
+	font-size: 1.2rem;
+	width: 4rem;
+	text-align: center;
+
+}
+.wish_icons{
+	grid-column:span 6;
+	height:4rem;
+	
+
+}
+.wish_icons:nth-child(odd) img{
+	float: left;
+	width: 30%;
+	height: 50%;
+}
+.wish_icons:nth-child(odd) p{
+	margin-top: 0.5rem;
+	float: left;
+	color: white;
+	font-size: 1.5rem;
+	
+}
+.wish_icons:nth-child(odd){
+}
+.wish_icons1 img{
+	float: left;
+	width: 25%;
+	height: 50%;
+	margin-top: 4px;
+}
+.wish_icons1 p{
+	margin-top: 1.2rem;
+	float: left;
+	color: white;
+	font-size: 1rem;
+}
+.wish_product{
+	grid-column:1/13;
+	height:8rem;
+	background: #E853BC;
+}
+.wish_product:nth-child(even){
+	background:#5ABD55;
+}
+.wish_product img{
+	width: 30%;
+	height: 60%;
+	float: left;
+
+}
+.wish_product p1{
+	margin-left: 15px;
+	font-size: 1.2rem;
+	color: white;
+	float: left;
+}
+.wish_product p2 img{
+	width: 12%;
+	height: 20%;
+	margin-left: 15px;
+}
+.wish_product p2{
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	color: white;
+}
+.wish_product p{
+	margin-left: 15px;
+	font-size: 1rem;
+	color: white;
+	float: left;
+}
